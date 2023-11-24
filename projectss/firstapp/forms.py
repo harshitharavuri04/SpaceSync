@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
-from .models import Workspace
+from .models import Workspace, Booking
 
 
 class CustomUserCreationForm(UserCreationForm):
@@ -22,5 +22,11 @@ class CustomUserCreationForm(UserCreationForm):
             'password2',
         ]
 
+
+# forms.py
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = []
 
 

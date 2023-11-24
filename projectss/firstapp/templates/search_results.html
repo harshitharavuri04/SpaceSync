@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACESYNC Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if workspaces %}
+        <ul>
+            {% for workspace in workspaces %}
+                <li>
+                    {{ workspace.workspace_type }} in {{ workspace.city }}
+                    <!-- Add a link to a view where users can book this workspace -->
+                    <a href="{% url 'book_workspace' workspace.id %}">Book Now</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No workspaces found.</p>
+    {% endif %}
+</body>
+</html>

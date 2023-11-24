@@ -1,0 +1,12 @@
+<!-- book_workspace.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Book {{ workspace.workspace_type }} in {{ workspace.city }}</h2>
+  <form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Book Now</button>
+  </form>
+{% endblock %}

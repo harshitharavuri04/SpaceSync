@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'projectss.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'workspaces',
+        'NAME': 'registeredws',
         'USER': 'root',
         'PASSWORD': '2210030151',
         'HOST': 'localhost',

@@ -1,248 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceSync - Workspace Rental</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<style>
-body, h1, h2, h3, p, ul {
-    margin: 5;
-    padding:5;
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SpaceSync - Workspace Rental</title>
+   <link rel="stylesheet" href="styles.css">
+   <style>
+   body, h1, h2, h3, p, ul {
+   margin: 5;
+   padding:5;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+   font-family: 'Arial', sans-serif;
+   background-color: #f5f5f5;
+   color: #333;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 10px;
 }
 
 /* Header Styles */
 header {
-    background-color: #f5f5f5;
-    color: #000000;
+   background-color: #f5f5f5;
+   color: #000000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 0;
 }
 
 .logo {
-    font-size: 36px;
+   font-size: 36px;
 }
 
 .nav-links {
-    color: #00000;
-    list-style: none;
-    display: flex;
+   color: black;
+   list-style: none;
+   display: flex;
 }
 
 .nav-links li {
-    margin-left: 20px;
-     color: #00000;
+   margin-left: 20px;
+    color: #00000;
 }
 
 .nav-links a {
 
-    text-decoration: none;
-    color: #00000;
-    font-weight: bold;
-    transition: color 0.3s;
+   text-decoration: none;
+   color: #00000;
+   font-weight: bold;
+   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ff8c00;
+   color: #ff8c00;
 }
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStFdB1yoP342SmgNGsgg9lfPHQN4XdpBogWA&usqp=CAU');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 200px 0;
-    color: #fff;
+   background-image: url('https://i.pinimg.com/736x/5c/b5/34/5cb5344bd3af65f75fd3da0aaf67df58.jpg');
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+   padding: 200px 0;
+   color: black;
 }
 
 .hero-title {
-    font-size: 48px;
-    margin-bottom: 20px; /* Increase the margin for spacing */
-    text-transform: uppercase; /* Uppercase the text */
-    letter-spacing: 2px; /* Add letter spacing */
+   font-size: 48px;
+   margin-bottom: 20px; /* Increase the margin for spacing */
+   text-transform: uppercase; /* Uppercase the text */
+   letter-spacing: 2px; /* Add letter spacing */
 }
 
 
 .hero-text {
-    font-size: 24px;
-    margin-bottom: 40px;
-    font-style: italic; /* Make the text italic */
+   font-size: 24px;
+   margin-bottom: 40px;
+   font-style: italic; /* Make the text italic */
 }
 
 
 .btn-primary {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #ff8c00;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 18px; /* Increase the font size */
+   display: inline-block;
+   padding: 15px 30px;
+   background-color: #ff8c00;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+   font-size: 18px; /* Increase the font size */
 }
 
 .btn-primary:hover {
-    background-color: #333;
-    transform: scale(1.05); /* Add a slight zoom effect on hover */
+   background-color: #333;
+   transform: scale(1.05); /* Add a slight zoom effect on hover */
 }+;l
 
 /* Features Section Styles */
 .features {
-    padding: 80px 0;
+   padding: 80px 0;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
+   text-align: center;
+   font-size: 36px;
+   margin-bottom: 40px;
 }
 
 .feature {
-    text-align: center;
-    margin-bottom: 40px;
+   text-align: center;
+   margin-bottom: 40px;
 }
 
 .feature-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    display: block;
+   width: 80px;
+   height: 80px;
+   margin: 0 auto;
+   display: block;
 }
 
 .feature-title {
-    font-size: 24px;
-    margin-top: 20px;
+   font-size: 24px;
+   margin-top: 20px;
 }
 
 .feature-text {
-    font-size: 18px;
-    color: #666;
+   font-size: 18px;
+   color: #666;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+   .navbar {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .nav-links {
+       margin-top: 20px;
+   }
+
+   .nav-links li {
+       margin-left: 0;
+       margin-bottom: 10px;
+   }
+}.search-bar {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .nav-links {
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 70%;
+        margin-right: 5px;
+    }
+
+    .search-btn {
+        background-color: #ff8c00;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .search-btn:hover {
+        background-color: #333;
+    }
+      .nav-links a:hover {
+         color: #ff8c00;
+         transform: scale(1.1);
+      }
+
+      /* Hero search bar styles */
+      .search-bar input:focus {
+         border-color: #ff8c00;
+      }
+
+      /* Workspace registration button hover effect */
+      .workspace-registration button:hover {
+         background-color: #ff8c00;
+         color: black;
+      }
+
+      /* Feature hover effect */
+      .feature:hover {
+         transform: scale(1.05);
+      }
+/* Footer hover effect */
+      footer:hover {
+         background-color: #555;
+      }
+      .location-selector {
+      color : white;
+      font-size: 20px;
+        text-align: center;
         margin-top: 20px;
+        transform: translateY(-20px); /* Move it up initially */
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        opacity: 1; /* Show the dropdown */
+        transform: translateY(0);
     }
 
-    .nav-links li {
-        margin-left: 0;
-        margin-bottom: 10px;
+    .custom-select {
+        position: relative;
+        display: inline-block;
+        width: 30%;
     }
-}
 
-</style>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo" style="font-family:Monaco">SpaceSync</h1>
-                <ul class="nav-links">
-                    <li><a href="about">About</a></li>
-                    {% if user.is_authenticated %}
-                      <li> Hi  {{ user.username }}!   </li>
-                     <li><a href="/my_account" class="btn btn-danger">My Account</a></li>
-                     {% else %}
-                     <li> <a href="/login" class="btn btn-primary">Login</a> </li>
-                     <a href="/signup" class="btn btn-success">Signup</a>
-                     {% endif %}
-                    <li><a href="ContactUs">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+    }
 
-        <div class="hero">
-            <div class="container">
-                 <div class="search-bar">
-                   <h2>Find Workspaces</h2>
-                      <input type="text" placeholder="Search workspaces...">
-            <div class="location-selector">
-                <label for="location">Location:</label>
-                <select id="location">
-                    <option value="all">All Locations</option>
-                    <option value="city1">City 1</option>
-                    <option value="city2">City 2</option>
-                    <!-- Add more location options here -->
-                </select>
-            </div>
-        </div>
+    .select-arrow {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #333;
+    }
 
-        <div class="workspace-registration">
-            <h2>Register Your Workspace</h2>
-            <p>If you own a workspace, you can register it here.</p>
-           <button><a href="submit_workspace">Register Now</a></button>
-        </div>
+    /* Style for hover effect */
+    select:hover {
+        border-color: #ff8c00;
+    }
+
+    /* Style for focus effect */
+    select:focus {
+        border-color: #ff8c00;
+        outline: none;
+    }
+   </style>
+</head>
+<body>
+   <header>
+
+       <nav class="navbar">
+           <div class="container">
+               <h1 class="logo" style="font-family:Monaco">SpaceSync</h1>
+               <ul class="nav-links">
+                   <li><a href="about">About</a></li>
+                   {% if user.is_authenticated %}
+                     <li> Hi  {{ user.username }}!   </li>
+                    <li><a href="/my_account" class="btn btn-danger">My Account</a></li>
+                    {% else %}
+                    <li> <a href="/login" class="btn btn-primary">Login</a> </li>
+                    <a href="/signup" class="btn btn-success">Signup</a>
+                    {% endif %}
+                   <li><a href="ContactUs">Contact Us</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <div class="hero">
+   <div class="search-bar">
+    <h1><i>Search for Workspaces which suit you!</i></h1>
+        <form method="post" action="{% url 'search_workspaces' %}">
+              {% csrf_token %}
+            <select id="locationInput" name="city">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore">Banglore </option>
+            </select>
+            <label for="workspaceType">Workspace Type:</label>
+            <select id="workspaceType" name="workspaceType">
+                <option value="coworking">Co-working Space</option>
+                <option value="conference">Conference Rooms</option>
+                <option value="virtual">Virtual Office</option>
+                <option value="cabins">Private Cabins</option>
+                <option value="meeting">Meeting Rooms</option>
+                <option value="personal">Personalized Desk</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
 
 
-            </div>
-        </div>
-    </header>
+</div>
+</div>
+       <div class="workspace-registration">
+           <h2 style="color: orange;"><b>Register Your Workspace</b></h2>
+           <p style="color: orange;"><b>If you own a workspace, you can register it here.</b></p>
+          <button><a href="submit_workspace">Register Now</a></button>
+       </div>
 
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Why SpaceSync?</h2>
-            <div class="feature">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-DVRdOXUKDY8nc9EiWFKBObkEjzj1z7OUMGAB9uvoA&s" alt="Workspace Icon" class="feature-icon">
-                <h3 class="feature-title">Variety of Workspaces</h3>
-                <p class="feature-text">Explore a diverse range of workspaces to suit your needs.</p>
-            </div>
-            <div class="feature">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAAB7CAMAAADNA9uJAAAAY1BMVEX///8AAAD8/PyRkZE+Pj739/fp6ens7Oy5ubmbm5ufn5/Q0NA3NzdsbGzJyckFBQVNTU12dnZgYGBSUlIdHR0sLCwjIyOtra3BwcHd3d1GRkZYWFimpqaFhYXj4+N/f38TExMELdl8AAADO0lEQVR4nO2b7ZqqIBCAIRU1zdZSU1ur+7/Kw4q6g/R1inHZZ+f9VeMo74IggcsYQRAEQRAEQRC/mlUgeSZpCZmrNB5XtNFNiSBqh6S8WdJtJLrwiWN4PSfcfedcDsv6fbHmkPKqZZhqSfHSjgnXOV5L2sySkoUld/yxwPwP4btlHQNV6tb3/aFJz2bSWR1JZdK2/1Qs23lUJRV1KITIVS2ZPVzp5zJFDJVaLyoZqfL7z0LdlKbkFtwHux+QrEnyL0lmpqSZdDEksyXcRFfybY8hOcQh3JAc4pWHOBbVlT44a5K3gJITBVrDZ/PyX5dEuz1X6bygdyRbnDmm8Sh+SxKpKmO7kmsUSc8o5y1JnNklSeJJbvp4c19SPWU+fkySe02SZPv7kn4iWZvxxSTfgSRJkiRJ8v8lN3UEkGNkDL9H9UY+iLSUSJ7nw0ido0t6WmxjrK+sjflNNv8BFP+4ZHxNcj9PIUmStAFJ2oIkbfHnJLe8Fexz5bYk90PW8Z19SyXZBSFAStbwexjILE+LhJGUDGYpbdhfzr6lkixSyIXzUgv4FeeVr4VKzi9aoOCpGK5mfWfH3nwyDWRbK2xvOFqT9E/TtbzHxb4i2fV73CPynsy0wEr2iliLmEx7ZQjD0Ku9+9aVUIZKa5IdVlsze5KjI8oqqiVJtD4Drv6u5BmzHi1J4tajHUkw9ggERSuS3ndbH9yaqpmO3teuviuS4V7b6ARjT+TMpDc4ch/ceVo9uiIZyDkaL07jgbNWj45IhmpXoj3Bs/vza6wH9w3JnPPZ/vq0qtYMm+NF3+LweY3/Q6zcfwCkSAu/f+zLqblFobz8Rht7lpB8grHjjHWZhuOpHXNEcguGoFI/9MkWksyTDHCUJWuBJIeDeVNAx/F2dm1xQIC6jEGKU5LsVBmO7kmyU8nn57knOYxEaz3FNcm+93izFOckmajW8xT3JOeTcDclmZFCkiRpg18k2X29Wj7RL0fDQNgvR4t7DBM3HElVAZUPKdQL+YBqnmKiHuc46yzGi6jvEaFIBsXjkp8nxVlmYQebkmj/QnTltbhX+cRyZCx58IbfsxyR34pfWQDXkCAIgiAIgiAINP4BEzg7MCS9WGQAAAAASUVORK5CYII=" alt="Calendar Icon" class="feature-icon">
-                <h3 class="feature-title">Flexible Booking</h3>
-                <p class="feature-text">Book workspaces by the hour, day, or month - you decide.</p>
-            </div>
-            <div class="feature">
-                <img src="data:image/png;base64,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" alt="Security Icon" class="feature-icon">
-                <h3 class="feature-title">Security & Privacy</h3>
-                <p class="feature-text">We prioritize your security and privacy at every step.</p>
-            </div>
-            <div class="feature">
-                <img src="data:image/png;base64,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"
-             alt="Owner Icon" class="feature-icon">
-                <h3 class="feature-title">For Workspace Owners</h3>
-                <p class="feature-text">Easily list your space, set availability, and manage bookings.</p>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 SpaceSync</p>
-        </div>
-    </footer>
+           </div>
+       </div>
+   </header>
+
+   <section class="features">
+       <div class="container">
+           <h2 class="section-title">Why SpaceSync?</h2>
+           <div class="feature">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-DVRdOXUKDY8nc9EiWFKBObkEjzj1z7OUMGAB9uvoA&s" alt="Workspace Icon" class="feature-icon">
+               <h3 class="feature-title">Variety of Workspaces</h3>
+               <p class="feature-text">Explore a diverse range of workspaces to suit your needs.</p>
+           </div>
+<div class="feature">
+               <img src=" " alt="Calendar Icon" class="feature-icon">
+               <h3 class="feature-title">Flexible Booking</h3>
+               <p class="feature-text">Book workspaces by the hour, day, or month - you decide.</p>
+           </div>
+           <div class="feature">
+               <img src=" " alt="Security Icon" class="feature-icon">
+               <h3 class="feature-title">Security & Privacy</h3>
+               <p class="feature-text">We prioritize your security and privacy at every step.</p>
+           </div>
+           <div class="feature">
+               <img src=" "
+            alt="Owner Icon" class="feature-icon">
+               <h3 class="feature-title">For Workspace Owners</h3>
+               <p class="feature-text">Easily list your space, set availability, and manage bookings.</p>
+           </div>
+       </div>
+   </section>
+
+   <footer>
+       <div class="container">
+           <p>&copy; 2023 SpaceSync</p>
+       </div>
+   </footer>
 </body>
 </html>

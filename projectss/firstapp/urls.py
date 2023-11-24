@@ -12,4 +12,6 @@ urlpatterns = [
     path('my_account/', views.my_account, name='my_account'),
     path('submit_workspace/', views.submit_workspace, name='submit_workspace'),
     path('insertws/', views.insertws, name='insertws'),
+    path('search_workspaces/', views.search_workspaces, name='search_workspaces'),
+    path('book_workspace/',views.book_workspace,name='book_workspace'),
 ]
